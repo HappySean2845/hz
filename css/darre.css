@@ -1,0 +1,49 @@
+@charset "utf-8";
+.logo{
+	width: 3.7rem;
+	height: 1.41rem;
+	position: absolute;
+    top: 3.85rem;
+	left: 1.2rem;
+}
+.logo img{
+	width: 100%;
+}
+.gamerule{
+	width: 2.64rem;
+	height: 0.88rem;
+	position: absolute;
+
+}
+.gamerule img{
+	width: 100%;
+}
+.getJiu{
+	width: 3.67rem;
+	height: 1.28rem;
+	position: absolute;
+}
+.getJiu img{
+	width: 100%;
+}
+.light_Icon{
+	width: 0.4rem;
+	height: 0.39rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+.light_Icon img{
+	width: 100%;
+}
+.light_shake{
+-webkit-animation:shake 1s .2s linear both infinite;
+-moz-animation:shake 1s .2s linear both infinite;}
+@-webkit-keyframes shake{
+0%,50%,100%{opacity: 1;}
+25%,75%{opacity: 0;}
+}
+@-moz-keyframes shake{
+0%,50%,100%{opacity: 1;}
+25%,75%{opacity: 0;}
+}
