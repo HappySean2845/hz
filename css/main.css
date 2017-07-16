@@ -1,70 +1,78 @@
 body{
   background:url(../images/bg.jpg) center top no-repeat;
-  width:7.5rem;
   background-size:7.5rem;
+  background-color:#01081d;
+  width:7.5rem;
+  height:13.34rem;
+  overflow:hidden;
 }
 body img{
   position:absolute;
 }
+#scene{
+  width:7.5rem;
+  overflow:hidden;
+  position:absolute;
+  top:0;left:0;
+}
+.bg_line,.star{
+  width:8.64rem;
+  margin-left:-0.57rem;
+}
 .bed{
-  top: 5.08rem;
-  left: 0.68rem;
-  width: 3.5rem;
+  width: 4.2rem;
+  top: 5.8rem !important;
+  left: 0.2rem !important;
 }
 .light{
-  top: 3rem;
-  right: 2.4rem;
-  height: 1.8rem;
+  width: 0.24rem;
+  right: 2.8rem !important;
+  left: initial !important;
+  top: 3.6rem !important;
 }
 .table{
-  width: 1.3rem;
-  top: 6rem;
-  right: 1.3rem;
+  width: 1.46rem;
+  top: 6.5rem !important;
+  left: initial !important;
+  right: 1rem;
 }
-#scene{
-  position:absolute;
+.chair{
+  width: 1.27rem;
+  top: 7.3rem !important;
+  left: -0.8rem !important;
 }
-#scene img{
-  position:absolute;
-}
-#scene .star{
-  width:7.5rem;
-}
-#scene .chair{
-  margin-top: 6rem;
-  width: 1.2rem;
-}
-#scene .tv{
-  margin-top: 4.5rem;
-  margin-left:6.3rem;
-  right: 0rem;
-  width: 1rem;
+.tv{
+  width: 0.9rem;
+  top: 5rem !important;
+  right: -0.4rem;
+  left: initial !important;
 }
 .text_wrap{
   position: absolute;
   left: 28%;
-  top: 8rem;
+  top: 10rem;
 }
 .text_wrap .text{
   position:relative;
   float:left;
-  margin-left:0.2rem;
-  width:0.58rem;text-align:center;
-  height:0.58rem;line-height:0.58rem;
+  margin-left:0.15rem;
+  width:0.64rem;text-align:center;
+  height:0.64rem;line-height:0.6rem;
   background:url(../images/text_bg_dark.png) center no-repeat;
-  background-size:0.58rem;
-  font-size:0.24rem;
+  background-size:0.64rem;
+  font-size:0.26rem;
   color:#fff;
 }
 .text_wrap .text i{
+  background-color:#010f21;
   display:block;
   border-radius:50%;
   width:0.2rem;height:0.22rem;line-height:0.22rem;
   border:1px solid #fff;
   font-size:0.16rem;
   position:absolute;
-  top:0.02rem;
-  right: 0.04rem;
+  top:-0.06rem;
+  right:0rem;
   color:#fff;
   font-style: normal;
 }
