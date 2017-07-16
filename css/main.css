@@ -1,0 +1,73 @@
+body{
+  background:url(../images/bg.jpg) center top no-repeat;
+  width:7.5rem;
+  background-size:7.5rem;
+}
+body img{
+  position:absolute;
+}
+.bed{
+  top: 5.08rem;
+  left: 0.68rem;
+  width: 3.5rem;
+}
+.light{
+  top: 3rem;
+  right: 2.4rem;
+  height: 1.8rem;
+}
+.table{
+  width: 1.3rem;
+  top: 6rem;
+  right: 1.3rem;
+}
+#scene{
+  position:absolute;
+}
+#scene img{
+  position:absolute;
+}
+#scene .star{
+  width:7.5rem;
+}
+#scene .chair{
+  margin-top: 6rem;
+  width: 1.2rem;
+}
+#scene .tv{
+  margin-top: 4.5rem;
+  margin-left:6.3rem;
+  right: 0rem;
+  width: 1rem;
+}
+.text_wrap{
+  position: absolute;
+  left: 28%;
+  top: 8rem;
+}
+.text_wrap .text{
+  position:relative;
+  float:left;
+  margin-left:0.2rem;
+  width:0.58rem;text-align:center;
+  height:0.58rem;line-height:0.58rem;
+  background:url(../images/text_bg_dark.png) center no-repeat;
+  background-size:0.58rem;
+  font-size:0.24rem;
+  color:#fff;
+}
+.text_wrap .text i{
+  display:block;
+  border-radius:50%;
+  width:0.2rem;height:0.22rem;line-height:0.22rem;
+  border:1px solid #fff;
+  font-size:0.16rem;
+  position:absolute;
+  top:0.02rem;
+  right: 0.04rem;
+  color:#fff;
+  font-style: normal;
+}
+.text_warp .text.light{
+  background:url(../images/text_bg_light.png) center no-repeat !important;
+}
