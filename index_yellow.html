@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<meta name="x5-orientation" content="portrait">
+		<title>华住酒店</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/third.css">
+	<link rel="stylesheet" type="text/css" href="css/darre.css">
+	<body>
+	    <!--公用头-->
+		<div class="logo">
+			<img src="images/darre/logo_03.png" alt="" />
+		</div>
+		<div class="gamerule">
+			<img src="images/darre/howplay_06.png" alt="" />
+		</div>
+		<!--<div class="light_Icon light_shake">-->
+			<!--<img src="images/darre/lightIcon_11.png" alt="" />-->
+		<!--</div>-->
+        <!--公用头结束-->
+		<!-- 需要动的元素 -->
+		<div id="scene" data-limit-y="0" data-scalar-x="60">
+			<img data-depth="0.00" class="star" src="images/ht/star.png">
+			<img data-depth="0.20" class="bg_line" src="images/ht/bg_line.png">
+			<img data-depth="0.25" class="bed" src="images/ht/bed.png">
+			<!--门-->
+			<img data-depth="0.20" class="door" src="images/ht/door.png">
+			<!--墙纸-->
+			<img data-depth="0.25" class="wall" src="images/ht/wall.png">
+			<!--床上玩具-->
+			<img data-depth="0.20" class="toy" src="images/ht/toy.png">
+			<!--桌子-->
+			<img data-depth="0.25" class="table" src="images/ht/table.png">
+			<!--灯-->
+			<img data-depth="0.22" class="light" src="images/ht/light.png">
+			<!--吊灯-->
+			<img data-depth="0.22" class="toplight" src="images/ht/toplight.png">
+
+
+		</div>
+		<!-- 想住就住4个字 -->
+        <!--公用尾-->
+		<div class="text_wrap">
+			<div class="text">想<i>0</i></div>
+			<div class="text">住<i>0</i></div>
+			<div class="text">就<i>0</i></div>
+			<div class="text">住<i>0</i></div>
+			<div class="getJiu">
+				<img src="images/darre/get_11.png" alt="" />
+			</div>
+		</div>
+	   <!--公用尾结束-->
+	</body>
+	<script type="text/javascript" src="js/rem.js"></script>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/parallax.js"></script>
+	<script type="text/javascript">
+		var scene = $('#scene').get(0);
+		var parallax = new Parallax(scene);
+	</script>
+
+</html>

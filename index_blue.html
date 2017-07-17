@@ -1,85 +1,72 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-	    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-		<meta name="x5-orientation" content="portrait">
-		<title>华住酒店</title>
-	</head>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/second.css">
-	<link rel="stylesheet" type="text/css" href="css/darre.css">
-	<body>
-	    <!--公用头-->
-		<div class="logo">
-			<img src="images/darre/logo_03.png" alt="" />
-		</div>
-		<div class="gamerule">
-			<img src="images/darre/howplay_06.png" alt="" />
-		</div>
-		<!--<div class="light_Icon light_shake">-->
-			<!--<img src="images/darre/lightIcon_11.png" alt="" />-->
-		<!--</div>-->
-        <!--公用头结束-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="x5-orientation" content="portrait">
+    <title>华住酒店</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/second.css">
+<link rel="stylesheet" type="text/css" href="css/darre.css">
+<body>
+<!--公用头-->
+<div class="logo">
+    <img src="images/darre/logo_03.png" alt=""/>
+</div>
+<div class="gamerule">
+    <img src="images/darre/howplay_06.png" alt=""/>
+</div>
+<!--<div class="light_Icon light_shake">-->
+<!--<img src="images/darre/lightIcon_11.png" alt="" />-->
+<!--</div>-->
+<!--公用头结束-->
 
 
+<!-- 需要动的元素 -->
+<div id="scene" data-limit-y="0" data-scalar-x="60">
+    <img data-depth="0.00" class="star" src="images/allseason/star.png">
+    <img data-depth="0.20" class="bg_line" src="images/allseason/bg_line.png">
+    <img data-depth="0.25" class="bed" src="images/allseason/bed_10.png">
+    <!--电视机-->
+    <img data-depth="0.23" class="tv" src="images/allseason/tv_03.png">
+    <!--鞋子-->
+    <img data-depth="0.23" class="shoe" src="images/allseason/shoe_07.png">
+    <!--墙上东西-->
+    <img data-depth="0.20" class="wall" src="images/allseason/wall_06.png">
+    <!--床头柜-->
+    <img data-depth="0.23" class="bedside" src="images/allseason/bedside_11.png">
+    <!--桌子-->
+    <img data-depth="0.25" class="table" src="images/allseason/table_14.png">
+    <!---->
+
+    <!--<img data-depth="0.25" class="bed" src="images/bed.png">-->
+    <!--<img data-depth="0.26" class="light" src="images/light.png">-->
+    <!--<img data-depth="0.26" class="table" src="images/table.png">-->
+    <!--<img data-depth="0.23" class="chair" src="images/chair.png">-->
+    <!--<img data-depth="0.23" class="tv" src="images/tv.png">-->
+</div>
+<!-- 想住就住4个字 -->
 
 
-		<!-- 需要动的元素 -->
-		<div id="scene" data-limit-y="0" data-scalar-x="60">
-			<img data-depth="0.00" class="star" src="images/allseason/star.png">
-			<img data-depth="0.20" class="bg_line" src="images/allseason/bg_line.png">
-			<img data-depth="0.25" class="bed" src="images/allseason/bed_10.png">
-			<!--电视机-->
-			<img data-depth="0.23" class="tv" src="images/allseason/tv_03.png">
-			<!--鞋子-->
-			<img data-depth="0.23" class="shoe" src="images/allseason/shoe_07.png">
-			<!--墙上东西-->
-			<img data-depth="0.20" class="wall" src="images/allseason/wall_06.png">
-			<!--床头柜-->
-			<img data-depth="0.23" class="bedside" src="images/allseason/bedside_11.png">
-			<!--桌子-->
-			<img data-depth="0.25" class="table" src="images/allseason/table_14.png">
-
-
-			<!--<img data-depth="0.25" class="bed" src="images/bed.png">-->
-			<!--<img data-depth="0.26" class="light" src="images/light.png">-->
-			<!--<img data-depth="0.26" class="table" src="images/table.png">-->
-			<!--<img data-depth="0.23" class="chair" src="images/chair.png">-->
-			<!--<img data-depth="0.23" class="tv" src="images/tv.png">-->
-		</div>
-		<!-- 想住就住4个字 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-							<!--公用尾-->
-		<div class="text_wrap">
-			<div class="text">想<i>0</i></div>
-			<div class="text">住<i>0</i></div>
-			<div class="text">就<i>0</i></div>
-			<div class="text">住<i>0</i></div>
-			<div class="getJiu">
-				<img src="images/darre/get_11.png" alt="" />
-			</div>
-		</div>
-	   <!--公用尾结束-->
-	</body>
-	<script type="text/javascript" src="js/rem.js"></script>
-	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="libs/parallax.js"></script>
-	<script type="text/javascript">
-		var scene = $('#scene').get(0);
-		var parallax = new Parallax(scene);
-	</script>
+<!--公用尾-->
+<div class="text_wrap">
+    <div class="text">想<i>0</i></div>
+    <div class="text">住<i>0</i></div>
+    <div class="text">就<i>0</i></div>
+    <div class="text">住<i>0</i></div>
+    <div class="getJiu">
+        <img src="images/darre/get_11.png" alt=""/>
+    </div>
+</div>
+<!--公用尾结束-->
+</body>
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="libs/parallax.js"></script>
+<script type="text/javascript">
+  var scene = $('#scene').get(0);
+  var parallax = new Parallax(scene);
+</script>
 
 </html>
