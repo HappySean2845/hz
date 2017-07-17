@@ -1,0 +1,162 @@
+body{
+  background:url(../images/bg.jpg) center top no-repeat;
+  background-size:7.5rem;
+  background-color:#01081d;
+  width:7.5rem;
+  height:13.34rem;
+}
+.hide{
+  display:none;
+}
+.popup{
+  position:absolute;
+  top:12%;left:0.6rem;
+}
+.popup_small{
+  width:6.23rem;
+  height:7.23rem;
+  background:url(../images/popup/popup_small_bg.png) center top no-repeat;
+  background-size:6.23rem 7.23rem;
+}
+.popup_big{
+  width:6.2rem;height:9.23rem;
+  background:url(../images/popup/popup_big.png) center top no-repeat;
+  background-size:6.2rem 9.23rem;
+}
+.popup .close{
+  position: absolute;
+  right: 0.25rem;
+  top: 0.26rem;
+  width: 0.34rem;
+}
+.popup .text{
+  font-size:0.21rem;
+  color:#fff;
+  text-align:center;
+}
+.popup .title{
+  line-height:0.3rem;
+}
+/*解锁*/
+.popup_unlock .unlock_title{
+  width:5.07rem;
+  height:1.73rem;
+  position: absolute;
+  left: 0.35rem;
+  top: 0.45rem;
+}
+.popup_unlock .text{
+  margin-top: 2.2rem;
+  margin-left: 0.14rem;
+  line-height:0.17rem;
+}
+.popup_unlock .want_font{
+  width:1rem;
+  display:block;
+  margin:0 auto;
+}
+/*大框通用*/
+.popup_big .get_font_title{
+  display:block;
+  width:4.86rem;
+  margin-left: 1rem;
+  margin-top: 0.7rem;
+}
+.popup_big .text{
+  margin-top:0.2rem;
+  margin-left:0.3rem;
+}
+.popup_big .button{
+  box-sizing: border-box;
+  width:1.02rem;
+  height:1.05rem;
+  background:url(../images/popup/button.png) center top no-repeat;
+  background-size:1.02rem 1.04rem;
+  font-size:0.234rem;
+  padding-top:0.27rem;
+  color:#fff;
+  font-weight:bold;
+  text-align:center;
+  float:left;
+  margin-left:1rem;
+  margin-top:0.2rem;
+}
+.popup_big .button:nth-of-type(2){
+  margin-left:1.7rem;
+}
+.popup_big .get_award_title{
+  display:block;
+  width:4.11rem;
+  margin-left: 1rem;
+  margin-top: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+/*登录*/
+.popup_login{
+  width:6.2rem;height:7.12rem;
+  background:url(../images/popup/login.png) center top no-repeat;
+  background-size:6.2rem 7.12rem;
+}
+.popup_login .logo{
+  width:2.34rem;
+  margin:0.6rem auto 0;
+  display:block;
+}
+.popup_login .login_title{
+  width:3.8rem;height:0.67rem;
+  line-height:0.67rem;
+  font-size:0.32rem;
+  font-weight:bold;
+  text-align:center;
+  border-radius:0.08rem;
+  background-color:#651248;
+  color:#fff;
+  margin:0.7rem auto 0;
+}
+.popup_login input{
+  border:0.01rem solid #a5a6a8;
+  color:#a5a6a8;
+  background-color:transparent;
+  font-size:0.28rem;
+}
+.popup_login .phone{
+  width:3.4rem;
+  height:0.5rem;
+  line-height:0.56rem;
+  display:block;
+  margin:0.2rem auto 0;
+}
+.popup_login .v_code{
+  width:1.25rem;
+  height:0.24rem;
+  display:block;
+  float:left;
+  margin-top:0.2rem;
+  margin-left:1.25rem;
+  font-size:0.2rem;
+  line-height:0.24rem;
+}
+.popup_login .get_v_code{
+  float:left;
+  border-radius:0.08rem;
+  background-color:#651248;
+  width:2.06rem;
+  height:0.4rem;
+  text-align:center;
+  color:#fff;
+  font-size:0.21rem;
+  line-height:0.4rem;
+  margin-top:0.2rem;
+  margin-left:0.1rem;
+}
+.popup_login .login{
+  color:#fff;
+  width:1.02rem;
+  height:1.05rem;
+  background:url(../images/popup/button.png) center top no-repeat;
+  background-size:1.02rem 1.04rem;
+  margin:1.4rem auto;
+  font-size:0.34rem;
+  text-align:center;
+  line-height:1.05rem;
+}
