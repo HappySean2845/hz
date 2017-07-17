@@ -32,35 +32,20 @@
   background:url(../images/text_bg_light.png) center no-repeat !important;
 }
 .logo{
-<<<<<<< HEAD
-  width: 1.54rem;
+  width: 1.78rem;
   position: absolute;
-    top: 1.6rem;
-  left: 1.31rem;
-=======
-	width: 1.78rem;
-	position: absolute;
     top: 1.84rem;
-	left: 0.81rem;
->>>>>>> 8b284169b8e5be1849a3f972dcb10255d97d2064
+  left: 0.81rem;
 }
 .logo img{
   width: 100%;
 }
 .gamerule{
-<<<<<<< HEAD
-  width: 1.1rem;
+  width: 1.27rem;
   /*height: 0.88rem;*/
   position: absolute;
-  right: 1.22rem;
-  top: 1.62rem;
-=======
-	width: 1.27rem;
-	/*height: 0.88rem;*/
-	position: absolute;
-	right: 0.82rem;
-	top: 1.86rem;
->>>>>>> 8b284169b8e5be1849a3f972dcb10255d97d2064
+  right: 0.82rem;
+  top: 1.86rem;
 }
 .gamerule img{
   width: 100%;
@@ -75,19 +60,11 @@
   width: 100%;
 }
 .light_Icon{
-<<<<<<< HEAD
-  width: 0.4rem;
-  height: 0.39rem;
+  width: 0.2rem;
+  height: 0.2rem;
   position: absolute;
   left: 50%;
   top: 50%;
-=======
-	width: 0.2rem;
-	height: 0.2rem;
-	position: absolute;
-	left: 50%;
-	top: 50%;
->>>>>>> 8b284169b8e5be1849a3f972dcb10255d97d2064
 }
 .light_Icon img{
   width: 100%;
@@ -104,5 +81,5 @@
 25%,75%{opacity: 0;}
 }
 .blur{
-  filter:blur(0.1rem);
+  filter:blur(0.2rem);
 }
