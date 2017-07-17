@@ -55,3 +55,15 @@ body img{
   top: 3.66rem!important;
   left: 3.76rem!important;
 }
+#scene .light_Icon:nth-of-type(1){
+  left: 5.26rem!important;
+  top: 6.08rem!important;
+}
+#scene .light_Icon:nth-of-type(2){
+  left: 0.04rem!important;
+  top: 4.8rem!important;
+}
+#scene .light_Icon:nth-of-type(3){
+  left: 2.88rem!important;
+  top: 5.82rem!important;
+}
