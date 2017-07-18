@@ -14,6 +14,7 @@ body #scene img{
   overflow:hidden;
   position:absolute;
   top:0;left:0;
+  height: 13.34rem;
 }
 .bg_line,.star{
   width:8.64rem;

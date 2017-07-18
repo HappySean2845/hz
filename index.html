@@ -82,7 +82,7 @@
 -->
 
 <!-- 需要动的元素 -->
-<div id="scene">
+<div id="scene" data-limit-y="0" data-scalar-x="60">
     <img data-depth="0.00" class="star" src="images/star.png">
     <img data-depth="0.20" class="bg_line" src="images/bg_line.png">
     <img data-depth="0.25" class="bed" src="images/bed.png">
@@ -157,7 +157,9 @@
         var animateKey = animation[parseInt(Math.random()*4)];
         var animateObj = new Object();
         animateObj[animateKey] = (animateKey=='left'||animateKey=='right')?'7.5rem':'15rem' ;   //将圆点图标移出屏幕
-        $(this).find("img").css("position",'relative').animate(animateObj,'slow','swing');
+        $(this).find("img").css("position",'relative').animate(animateObj,'slow','swing',function () {
+//          alert("animate回调");
+        });
       }
     })
     $("#popup_loginmsg .continue").on("click",function(){
