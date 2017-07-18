@@ -91,3 +91,6 @@ body img{
   left: 3.32rem!important;
   top: 7.8rem!important;
 }
+.blur{
+  filter:blur(0.2rem);
+}

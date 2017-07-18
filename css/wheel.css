@@ -1,0 +1,60 @@
+.wheel_wrap .logo{
+  width:2.1rem;
+  position:absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+.wheel_wrap .title{
+  position: absolute;
+  width: 4.4rem;
+  left: 21.3%;
+  top: 1.5rem;
+}
+.wheel_wrap .text_wrap{
+  top:3.4rem !important;
+  transform: scale(1.29);
+  -webkit-transform: scale(1.29);
+}
+.wheel_wrap p{
+  font-size:0.26rem;
+  color:#fff;
+  text-align:center;
+  position:absolute;
+  top:4.4rem;
+  width:100%;
+}
+.wheel_wrap p:nth-of-type(2){
+  top:4.8rem;
+}
+.wheel_wrap p b{
+  font-size:0.3rem;
+}
+.wheel_wrap .wheel{
+  width:4rem;
+  height:4rem;
+  position:absolute;
+  left:24%;
+  top:5.6rem;
+  background:url(../images/wheel/wheel.png) center no-repeat;
+  background-size:4rem 4rem;
+}
+.wheel_wrap .point{
+  margin:0 auto;
+  width:0.58rem;
+  position: absolute;
+  top: 6.45rem;
+  left: 3.48rem;
+}
+.wheel_wrap .start{
+  position:absolute;
+  top:9.4rem;
+  left:40%;
+  width:1.65rem;
+  height:1.65rem;
+  background:url(../images/text_bg_light.png) center no-repeat;
+  background-size:1.65rem 1.65rem;
+  font-size:0.33rem;
+  color:#fff;
+  text-align:center;
+  padding-top:0.9rem;
+}
