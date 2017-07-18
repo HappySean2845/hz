@@ -30,6 +30,19 @@
         </div>
         <img class="want_font" src="images/popup/want_font.png">
     </div>
+    <!-- 获取四个字通用，只需要把下方get_font_title的img换掉 -->
+    <div class="popup popup_big" id="popup_getkey">
+        <img class="close" src="images/popup/close.png">
+        <img class="get_font_title" src="images/popup/xiang.png">
+        <div class="text">
+            <p><b>友情提示：</b></p>
+            <p><b>注册/登录会员</b>或扫描<b>枕巾、小桌板、桌背</b>的二维码，</p>
+            <p>均有机会获得<b>“想住就住”</b>喔！</p>
+            <p>条条道路通免房，不妨大胆扫一下。</p>
+        </div>
+        <div class="button continue">继续<br>寻宝</div>
+        <div class="button award">我要<br>抽奖</div>
+    </div>
 </div>
 <div class="logo">
     <img src="images/darre/logo_03.png" alt=""/>
@@ -53,47 +66,40 @@
     <img data-depth="0.23" class="chair" src="images/chair.png">
     <img data-depth="0.23" class="tv" src="images/tv.png">
     <!--亮点一-->
-    <div correct="0" data-depth="0.26" class="light_Icon light_shake" style="">
+    <div data-depth="0.26" class="light_Icon light_shake" style="">
         <img src="images/darre/lightIcon_11.png" alt=""/>
     </div>
     <!--    left: 2.06rem;
   top: 6.16rem;-->
-    <div correct="1" data-depth="0.25" class="light_Icon light_shake">
+    <div data-depth="0.25" class="light_Icon light_shake">
         <img src="images/darre/lightIcon_11.png" alt=""/>
     </div>
-    <div correct="0" data-depth="0.25" class="light_Icon light_shake">
+    <div data-depth="0.25" class="light_Icon light_shake">
         <img src="images/darre/lightIcon_11.png" alt=""/>
     </div>
     <!-- <img data-depth="0.20" class="bg_line" src="images/bg_line.png"> -->
 </div>
 <!-- 想住就住4个字 -->
 <div class="text_wrap">
-    <div class="text">想<i>0</i></div>
-    <div class="text">住<i>0</i></div>
-    <div class="text">就<i>0</i></div>
-    <div class="text">住<i>0</i></div>
+    <div class="text">想<i></i></div>
+    <div class="text">住<i></i></div>
+    <div class="text">就<i></i></div>
+    <div class="text">住<i></i></div>
     <div class="getJiu">
         <img src="images/darre/get_11.png" alt=""/>
     </div>
 </div>
 </body>
 <script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript" src="libs/parallax.js"></script>
 <script type="text/javascript">
   $(function () {
-    //公用popup方法   popup用来制定popupcontainer中指定的某个popup   popkeypopu的id
-    var popupShow = function (popkey,speed){
-      if(typeof(speed) != "number") speed = 0;
-      $("#popup_container .popup").hide();
-      $("#popup_container").fadeIn(speed).find("#"+popkey).show();
-    },popupHide = function (speed){
-      if(typeof(speed) != "number") speed = 0;
-      $("#popup_container .popup").hide();
-      $("#popup_container").fadeOut(speed);
-    },animation = ["left","right","top",'bottom'];
+    initKeyNum($(".text_wrap .text"))
     //游戏说明弹窗
     popupShow("popup_begin",0);
+    randomLight($(".light_Icon"));
     $(".want_font,.close").on("click",function(){
       popupHide(500);
     })
@@ -101,15 +107,31 @@
     var parallax = new Parallax(scene,{
       pointerEvents: true,
     });
+    $("#popup_getkey .continue").on("click",function(){
+      //继续寻宝，跳转到全季酒店
+      console.log("to_allseason");
+      window.location.href = "index_yellow.html?xiang=1";
+    })
+    $("#popup_getkey .award").on("click",function(){
+      console.log("award");
+      //判断是否集齐了所有的字
+      var obj = GetRequest();
+      if(obj.zhufir=='1'&&obj.zhusec=='1'&&obj.jiu=='1'){
+        alert("全部集齐，跳转到抽奖页面")
+      }else{
+        popupShow("popup_begin",500);
+      }
+    })
     $("#scene .light_Icon").on("click",function (e) {
       var correct = $(this).attr("correct");
-      alert(correct)
       if(correct == 1){
-        //集字成功弹窗提示
+        popupShow("popup_getkey",500);
       }else{
         //失败  小光标飞走
-        var animateKey = parseInt(Math.random()*4);
-
+        var animateKey = animation[parseInt(Math.random()*4)];
+        var animateObj = new Object();
+        animateObj[animateKey] = (animateKey=='left'||animateKey=='right')?'7.5rem':'15rem' ;   //将圆点图标移出屏幕
+        $(this).find("img").css("position",'relative').animate(animateObj,'slow','swing');
       }
     })
   })

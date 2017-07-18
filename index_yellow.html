@@ -11,6 +11,21 @@
 <link rel="stylesheet" type="text/css" href="css/darre.css">
 <link rel="stylesheet" type="text/css" href="css/popup.css">
 <body>
+<div id="popup_container" class="popup_container hide" style="position: fixed;width: 100%;height: 100%;background: url('images/bg.jpg');background-size: 100% 100%;z-index: 556">
+    <!-- 获取四个字通用，只需要把下方get_font_title的img换掉 -->
+    <div class="popup popup_big" id="popup_getkey">
+        <img class="close" src="images/popup/close.png">
+        <img class="get_font_title" src="images/popup/zhu.png">
+        <div class="text">
+            <p><b>友情提示：</b></p>
+            <p><b>注册/登录会员</b>或扫描<b>枕巾、小桌板、桌背</b>的二维码，</p>
+            <p>均有机会获得<b>“想住就住”</b>喔！</p>
+            <p>条条道路通免房，不妨大胆扫一下。</p>
+        </div>
+        <div class="button continue">继续<br>寻宝</div>
+        <div class="button award">我要<br>抽奖</div>
+    </div>
+</div>
 <div class="wrap">
 <!--公用头-->
 <div class="logo">
@@ -59,10 +74,10 @@ top: 6.16rem;-->
 
 <!--公用尾-->
 <div class="text_wrap">
-    <div class="text">想<i>0</i></div>
-    <div class="text">住<i>0</i></div>
-    <div class="text">就<i>0</i></div>
-    <div class="text">住<i>0</i></div>
+    <div class="text">想<i></i></div>
+    <div class="text">住<i></i></div>
+    <div class="text">就<i></i></div>
+    <div class="text">住<i></i></div>
     <div class="getJiu">
         <img src="images/darre/get_11.png" alt=""/>
     </div>
@@ -71,11 +86,39 @@ top: 6.16rem;-->
 </div>
 </body>
 <script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript" src="libs/parallax.js"></script>
 <script type="text/javascript">
-  var scene = $('#scene').get(0);
-  var parallax = new Parallax(scene);
+  $(function () {
+    initKeyNum($(".text_wrap .text"))
+    randomLight($(".light_Icon"));
+    $(".want_font,.close").on("click",function(){
+      popupHide(500);
+    })
+    var scene = $('#scene').get(0)
+    var parallax = new Parallax(scene,{
+      pointerEvents: true,
+    });
+    $("#popup_getkey .continue").on("click",function(){
+      window.location.href = "index_blue.html?xiang=1&zhufir=1";
+    })
+    $("#popup_getkey .award").on("click",function(){
+      //到抽奖界面
+      console.log("award");
+    })
+    $("#scene .light_Icon").on("click",function (e) {
+      var correct = $(this).attr("correct");
+      if(correct == 1){
+        popupShow("popup_getkey",500);
+      }else{
+        //失败  小光标飞走
+        var animateKey = animation[parseInt(Math.random()*4)];
+        var animateObj = new Object();
+        animateObj[animateKey] = (animateKey=='left'||animateKey=='right')?'7.5rem':'15rem' ;   //将圆点图标移出屏幕
+        $(this).find("img").css("position",'relative').animate(animateObj,'slow','swing');
+      }
+    })
+  })
 </script>
-
 </html>
