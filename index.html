@@ -13,7 +13,32 @@
 
 
 <body>
-<div id="popup_container" class="popup_container hide" style="position: fixed;width: 100%;height: 100%;background: url('images/bg.jpg');background-size: 100% 100%;z-index: 556">
+<div id="popup_container" class="popup_container" style="position: fixed;width: 100%;height: 100%;background: url('images/bg.jpg');background-size: 100% 100%;z-index: 556">
+    <div class="popup popup_login hide" id="popup_login">
+        <img class="close" src="images/popup/close.png">
+        <img class="logo" src="images/logo.png">
+        <div class="login_title">登录华住账号</div>
+        <input type="tel" class="phone" placeholder="请输入手机号" maxlength="11">
+        <div>
+            <input type="text" class="v_code" placeholder="验证码">
+            <div class="get_v_code">获取短信验证码</div>
+        </div>
+        <div class="login">登录</div>
+    </div>
+    <!-- 文字未集齐，提示登录 -->
+    <div class="popup popup_big hide" id="popup_loginmsg">
+        <img class="close" src="images/popup/close.png">
+        <img class="get_award_title" src="images/popup/notall_03.png" style="margin-bottom: 1.1rem">
+        <div class="text">
+            <p><b>友情提示：</b></p>
+            <p><b>注册/登录会员</b>或扫描<b>枕巾、小桌板、桌背</b>的二维码，</p>
+            <p>均有机会获得<b>“想住就住”</b>喔！</p>
+            <p>条条道路通免房，不妨大胆扫一下。</p>
+        </div>
+        <div class="button continue">点我<br>继续寻字</div>
+        <div class="button toRegister">我要注册<br>华住会员</div>
+    </div>
+
     <!-- 解锁成功，进入第一个房间弹出此弹框 -->
     <div class="popup popup_small popup_unlock" id="popup_begin">
         <img class="close" src="images/popup/close.png">
@@ -31,7 +56,7 @@
         <img class="want_font" src="images/popup/want_font.png">
     </div>
     <!-- 获取四个字通用，只需要把下方get_font_title的img换掉 -->
-    <div class="popup popup_big" id="popup_getkey">
+    <div class="popup popup_big hide" id="popup_getkey">
         <img class="close" src="images/popup/close.png">
         <img class="get_font_title" src="images/popup/xiang.png">
         <div class="text">
@@ -44,10 +69,10 @@
         <div class="button award">我要<br>抽奖</div>
     </div>
 </div>
-<div class="logo">
+<div class="logo" id="logo">
     <img src="images/darre/logo_03.png" alt=""/>
 </div>
-<div class="gamerule">
+<div class="gamerule" id="gamerule">
     <img src="images/darre/howplay_06.png" alt=""/>
 </div>
 <!--
@@ -117,9 +142,10 @@
       //判断是否集齐了所有的字
       var obj = GetRequest();
       if(obj.zhufir=='1'&&obj.zhusec=='1'&&obj.jiu=='1'){
-        alert("全部集齐，跳转到抽奖页面")
+//        alert("全部集齐，跳转到抽奖页面");
+        window.location.href = 'wheel.html';
       }else{
-        popupShow("popup_begin",500);
+        popupShow("popup_loginmsg",500);
       }
     })
     $("#scene .light_Icon").on("click",function (e) {
@@ -134,6 +160,15 @@
         $(this).find("img").css("position",'relative').animate(animateObj,'slow','swing');
       }
     })
+    $("#popup_loginmsg .continue").on("click",function(){
+      popupHide(500);
+    })
+    $("#popup_loginmsg .toRegister").on("click",function(){
+      popupHide(0);
+      popupShow("popup_login",500);
+//      popup_login
+    })
+
   })
 </script>
 

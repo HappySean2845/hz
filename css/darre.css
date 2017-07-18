@@ -31,23 +31,23 @@
 .text_warp .text.light{
   background:url(../images/text_bg_light.png) center no-repeat !important;
 }
-.logo{
+#logo{
   width: 1.78rem;
   position: absolute;
     top: 1.84rem;
   left: 0.81rem;
 }
-.logo img{
+#logo img{
   width: 100%;
 }
-.gamerule{
+#gamerule{
   width: 1.27rem;
   /*height: 0.88rem;*/
   position: absolute;
   right: 0.82rem;
   top: 1.86rem;
 }
-.gamerule img{
+#gamerule img{
   width: 100%;
 }
 .getJiu{
