@@ -14,6 +14,18 @@
 
 <body>
 <div id="popup_container" class="popup_container" style="position: fixed;width: 100%;height: 100%;background: url('images/bg.jpg');background-size: 100% 100%;z-index: 556">
+    <div class="popup popup_big hide" id="popup_notcorrect">
+        <img class="close" src="images/popup/close.png">
+        <img class="get_award_title" src="images/popup/fail.png">
+        <div class="text">
+            <p><b>友情提示：</b></p>
+            <p><b>注册/登录会员</b>或扫描<b>枕巾、小桌板、桌背</b>的二维码，</p>
+            <p>均有机会获得<b>“想住就住”</b>喔！</p>
+            <p>条条道路通免房，不妨大胆扫一下。</p>
+        </div>
+        <div class="button" style="margin-left: 2.59rem;">继续<br>寻宝</div>
+        <!--<div class="button">我要<br>抽奖</div>-->
+    </div>
     <div class="popup popup_login hide" id="popup_login">
         <img class="close" src="images/popup/close.png">
         <img class="logo" src="images/logo.png">
@@ -158,7 +170,8 @@
         var animateObj = new Object();
         animateObj[animateKey] = (animateKey=='left'||animateKey=='right')?'7.5rem':'15rem' ;   //将圆点图标移出屏幕
         $(this).find("img").css("position",'relative').animate(animateObj,'slow','swing',function () {
-//          alert("animate回调");
+//          alert("animate回调"); popup_notcorrect
+          popupShow("popup_notcorrect",500);
         });
       }
     })
@@ -171,6 +184,9 @@
 //      popup_login
     })
 
+    $("#popup_login .button").on("click",function(){
+      popupHide(500);
+    })
   })
 </script>
 
