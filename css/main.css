@@ -6,7 +6,7 @@ body{
   height:13.34rem;
   overflow:hidden;
 }
-body img{
+body #scene img{
   position:absolute;
 }
 #scene{

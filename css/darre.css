@@ -58,6 +58,7 @@
 }
 .getJiu img{
   width: 100%;
+  position: absolute;
 }
 .light_Icon{
   width: 0.2rem;
