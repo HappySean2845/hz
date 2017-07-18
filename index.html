@@ -40,8 +40,8 @@
             <p>均有机会获得<b>“想住就住”</b>喔！</p>
             <p>条条道路通免房，不妨大胆扫一下。</p>
         </div>
-        <div class="button">继续<br>寻宝</div>
-        <div class="button">我要<br>抽奖</div>
+        <div class="button continue">继续<br>寻宝</div>
+        <div class="button award">我要<br>抽奖</div>
     </div>
 </div>
 <div class="logo">
@@ -97,16 +97,6 @@
 <script type="text/javascript">
   $(function () {
     initKeyNum($(".text_wrap .text"))
-    //公用popup方法   popup用来制定popupcontainer中指定的某个popup   popkeypopu的id
-    var popupShow = function (popkey,speed){
-      if(typeof(speed) != "number") speed = 0;
-      $("#popup_container .popup").hide();
-      $("#popup_container").fadeIn(speed).find("#"+popkey).show();
-    },popupHide = function (speed){
-      if(typeof(speed) != "number") speed = 0;
-      $("#popup_container .popup").hide();
-      $("#popup_container").fadeOut(speed);
-    },animation = ["left","right","top",'bottom'];
     //游戏说明弹窗
     popupShow("popup_begin",0);
     randomLight($(".light_Icon"));
@@ -117,6 +107,21 @@
     var parallax = new Parallax(scene,{
       pointerEvents: true,
     });
+    $("#popup_getkey .continue").on("click",function(){
+      //继续寻宝，跳转到全季酒店
+      console.log("to_allseason");
+      window.location.href = "index_yellow.html?xiang=1";
+    })
+    $("#popup_getkey .award").on("click",function(){
+      console.log("award");
+      //判断是否集齐了所有的字
+      var obj = GetRequest();
+      if(obj.zhufir=='1'&&obj.zhusec=='1'&&obj.jiu=='1'){
+        alert("全部集齐，跳转到抽奖页面")
+      }else{
+        popupShow("popup_begin",500);
+      }
+    })
     $("#scene .light_Icon").on("click",function (e) {
       var correct = $(this).attr("correct");
       if(correct == 1){

@@ -1,5 +1,5 @@
 body{
-  background:url(../images/ht/bg.jpg) center top no-repeat;
+  background:url(../images/bg.jpg) center top no-repeat;
   background-size:7.5rem 13.36rem;
   background-color:#01081d;
   width:7.5rem;
@@ -7,7 +7,7 @@ body{
   overflow:hidden;
 }
 body img{
-  position:absolute;
+  /*position:absolute;*/
 }
 #scene{
   width:7.5rem;

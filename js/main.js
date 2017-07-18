@@ -1,6 +1,16 @@
 /**
  * Created by Darre on 17/07/2017.
  */
+  //公用popup方法   popup用来制定popupcontainer中指定的某个popup   popkeypopu的id
+var popupShow = function (popkey,speed){
+  if(typeof(speed) != "number") speed = 0;
+  $("#popup_container .popup").hide();
+  $("#popup_container").fadeIn(speed).find("#"+popkey).show();
+},popupHide = function (speed){
+  if(typeof(speed) != "number") speed = 0;
+  $("#popup_container .popup").hide();
+  $("#popup_container").fadeOut(speed);
+},animation = ["left","right","top",'bottom'];
 //光点随机选中一个为正确光点
 function randomLight(jqObj){
   var index = parseInt(Math.random()*jqObj.length);
