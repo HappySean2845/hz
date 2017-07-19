@@ -1,8 +1,22 @@
 @charset "utf-8";
+body{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
 .text_wrap{
   position: absolute;
   left: 28%;
   top: 10rem;
+  transform: scale(1.16);
+  -webkit-transform: scale(1.16);
+}
+.text_wrap .msg{
+  font-size: 0.18rem;
+  color: #fff;
+  line-height: 0.18rem;
+  position: absolute;
+  left: 0.12rem;
+  top: -0.24rem;
 }
 .text_wrap .text{
   position:relative;
@@ -16,7 +30,7 @@
   color:#fff;
 }
 .text_wrap .text i{
-  background-color:#010f21;
+  background-color:#1D1731;
   display:block;
   border-radius:50%;
   width:0.2rem;height:0.22rem;line-height:0.22rem;
@@ -34,7 +48,7 @@
 #logo{
   width: 1.78rem;
   position: absolute;
-    top: 1.84rem;
+  top: 1.14rem;
   left: 0.81rem;
 }
 #logo img{
@@ -45,7 +59,7 @@
   /*height: 0.88rem;*/
   position: absolute;
   right: 0.82rem;
-  top: 1.86rem;
+  top: 1rem;
   z-index:555;
 }
 #gamerule img{
@@ -84,4 +98,14 @@
 }
 .blur{
   filter:blur(0.2rem);
+}
+.findkey{
+  width: 100%;
+  position: absolute;
+  font-size: 0.31rem;
+  line-height: 0.31rem;
+  color: #fff;
+  text-align: center;
+  z-index: 56;
+  top: 2.6rem;
 }
