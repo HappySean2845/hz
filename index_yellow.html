@@ -16,17 +16,13 @@
     <div class="popup popup_small popup_unlock" id="popup_begin">
         <img class="close" src="images/popup/close.png">
         <img class="unlock_title" src="images/popup/unlock_title.png">
-        <div class="text">
-            <b class="title">游戏规则</b>
-            <p>你的酒店<b>免费住</b>之旅已经开始！</p>
-            <p>看到bling~bling的亮点了没！</p>
-            <p>快！点点点点点它!</p>
-            <p>集齐<b>“想住就住”</b>四个字</p>
-            <p>即有机会获得华住旗下酒店<b>免费住、</b></p>
-            <p><b>200元酒店优惠券！100%中奖！</b></p>
-            <p>想怎么睡就怎么睡，放肆住!</p>
-        </div>
         <img class="want_font" src="images/popup/want_font.png">
+    </div>
+    <!--游戏规则弹唱-->
+    <div class="popup popup_small popup_unlock hide" id="popup_gamerule">
+        <img class="close" src="images/popup/close.png">
+        <div class="game_rule_msg">游戏规则</div>
+        <!--<img class="want_font" src="images/popup/want_font.png">-->
     </div>
     <div class="popup popup_big hide" id="popup_notcorrect">
         <img class="close" src="images/popup/close.png">
@@ -61,11 +57,9 @@
             <p>均有机会获得<b>“想住就住”</b>喔！</p>
             <p>条条道路通免房，不妨大胆扫一下。</p>
         </div>
-        <div class="button continue">点我<br>继续寻字</div>
-        <div class="button toRegister">我要注册<br>华住会员</div>
+        <div class="button continue" style="margin-left: 2.59rem;">点我<br>继续寻字</div>
+        <!--<div class="button toRegister">我要注册<br>华住会员</div>-->
     </div>
-
-
     <!-- 获取四个字通用，只需要把下方get_font_title的img换掉 -->
     <div class="popup popup_big hide" id="popup_getkey">
         <img class="close" src="images/popup/close.png">
@@ -199,9 +193,8 @@ top: 6.16rem;-->
     $("#gamerule").on("click",function () {
       popupShow("popup_begin",500);
     })
-
     $("#gamerule").on("click",function (e) {
-      popupShow("popup_begin",500);
+      popupShow("popup_gamerule",500);
       e.preventDefault();
       e.stopPropagation();
     })

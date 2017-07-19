@@ -10,7 +10,8 @@
 }
 .popup{
   position:absolute;
-  top:12%;left:0.6rem;
+  top:20%;
+  left:0.6rem;
 }
 .popup_small{
   width:6.23rem;
@@ -86,10 +87,11 @@
 }
 .popup_big .get_award_title{
   display:block;
-  width:4.11rem;
-  margin-left: 1rem;
+  width:6rem;
+  margin-left: 0.2rem;
   margin-top: 1.4rem;
   margin-bottom: 0.5rem;
+  font-size: 0.4rem;
 }
 /*登录*/
 .popup_login{
@@ -160,4 +162,21 @@
   font-size:0.34rem;
   text-align:center;
   line-height:1.05rem;
+}
+#popup_begin,#popup_gamerule{
+  width: 6.14rem;
+  height: 7.12rem;
+  background: url(../images/howplay_bg.png) center top no-repeat;
+  background-size: 6.14rem 7.12rem;
+}
+#popup_begin .want_font{
+  margin-top: 5.46rem;
+}
+.game_rule_msg{
+  font-size: 0.4rem;
+  line-height:0.4rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0.72rem;
 }
