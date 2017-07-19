@@ -10,7 +10,7 @@
 }
 .popup{
   position:absolute;
-  top:20%;
+  top:10%;
   left:0.6rem;
 }
 .popup_small{
@@ -20,6 +20,7 @@
   background-size:6.23rem 7.23rem;
 }
 .popup_big{
+  -webkit-transform:0.9;
   width:6.2rem;height:9.23rem;
   background:url(../images/popup/popup_big.png) center top no-repeat;
   background-size:6.2rem 9.23rem;
@@ -39,6 +40,9 @@
   line-height:0.3rem;
 }
 /*解锁*/
+.popup_unlock{
+  top:20%;
+}
 .popup_unlock .unlock_title{
   width:5.07rem;
   height:1.73rem;
@@ -86,9 +90,9 @@
   margin-left:1.7rem;
 }
 .popup_big .get_award_title{
-  display:block;
-  width:6rem;
-  margin-left: 0.2rem;
+  display: block;
+  width: 4.4rem;
+  margin-left: 0.88rem;
   margin-top: 1.4rem;
   margin-bottom: 0.5rem;
   font-size: 0.4rem;
