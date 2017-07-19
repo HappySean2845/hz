@@ -169,10 +169,7 @@
         var animateKey = animation[parseInt(Math.random()*4)];
         var animateObj = new Object();
         animateObj[animateKey] = (animateKey=='left'||animateKey=='right')?'7.5rem':'15rem' ;   //将圆点图标移出屏幕
-        $(this).find("img").css("position",'relative').animate(animateObj,'slow','swing',function () {
-//          alert("animate回调"); popup_notcorrect
-          popupShow("popup_notcorrect",500);
-        });
+        $(this).find("img").css("position",'relative').animate(animateObj,'slow','swing');
       }
     })
     $("#popup_loginmsg .continue").on("click",function(){
@@ -186,6 +183,15 @@
 
     $("#popup_login .button").on("click",function(){
       popupHide(500);
+    })
+    $("#gamerule").on("click",function (e) {
+      popupShow("popup_begin",500);
+      e.preventDefault();
+      e.stopPropagation();
+    })
+    //登录得就字
+    $(".getJiu").on("click",function(){
+      popupShow("popup_login",500);
     })
   })
 </script>

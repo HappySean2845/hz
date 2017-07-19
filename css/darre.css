@@ -46,6 +46,7 @@
   position: absolute;
   right: 0.82rem;
   top: 1.86rem;
+  z-index:555;
 }
 #gamerule img{
   width: 100%;
