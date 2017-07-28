@@ -45,6 +45,15 @@ body{
 .text_warp .text.light{
   background:url(../images/text_bg_light.png) center no-repeat !important;
 }
+.text_wrap .toAward{
+  color: #ffffff;
+  font-size: 0.17rem;
+  line-height: 0.2rem;
+  border-bottom: 1px solid #ffffff;
+  position: absolute;
+  right: -0.8rem;
+  top: 0.18rem;
+}
 #logo{
   width: 1.78rem;
   position: absolute;
@@ -59,8 +68,16 @@ body{
   /*height: 0.88rem;*/
   position: absolute;
   right: 0.82rem;
-  top: 1rem;
+  top: 1.4rem;
   z-index:555;
+  font-size: 0.17rem;
+  line-height: 0.17rem;
+  color: #ffffff;
+  text-align: right;
+}
+#gamerule .msg2{
+  margin-top: 0.22rem;
+  text-decoration: underline;
 }
 #gamerule img{
   width: 100%;
