@@ -54,7 +54,7 @@
 }
 .wheel_wrap .start{
   position:absolute;
-  top:9.4rem;
+  top:9.86rem;
   left:40%;
   width:1.65rem;
   height:1.65rem;
@@ -64,4 +64,14 @@
   color:#fff;
   text-align:center;
   padding-top:0.9rem;
+}
+.wheel_wrap .awardChance{
+  color: #ffffff;
+  text-align: center;
+  /*margin:0 auto;*/
+  font-size: 0.22rem;
+  line-height: 0.22rem;
+  position: absolute;
+  top: 9.84rem;
+  width: 100%;
 }
