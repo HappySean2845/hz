@@ -10,7 +10,7 @@
 }
 .popup{
   position:absolute;
-  top:10%;
+  top:20%;
   left:0.6rem;
 }
 .popup_small{
@@ -126,15 +126,16 @@
   font-size:0.28rem;
 }
 .popup_login .phone{
-  width:3.76rem;
+  width:3.68rem;
   height:0.66rem;
   line-height:0.56rem;
   display:block;
   margin:0.2rem auto 0;
   padding:0;
+  padding-left: 0.08rem;
 }
 .popup_login .v_code{
-  width: 1.4rem;
+  width: 1.32rem;
   height: 0.35rem;
   display: block;
   float: left;
@@ -142,6 +143,7 @@
   margin-left: 1.2rem;
   font-size: 0.2rem;
   line-height: 0.35rem;
+  padding-left: 0.08rem;
 }
 .popup_login .get_v_code{
   float: left;
