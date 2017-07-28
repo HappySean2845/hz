@@ -108,6 +108,14 @@
   margin:0.6rem auto 0;
   display:block;
 }
+.popup_login .login_msg{
+  font-size: 0.2rem;
+  line-height: 0.2rem;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  margin-top: 0.42rem;
+}
 .popup_login .login_title{
   width:3.8rem;height:0.67rem;
   line-height:0.67rem;
@@ -164,7 +172,7 @@
   height:1.05rem;
   background:url(../images/popup/button.png) center top no-repeat;
   background-size:1.02rem 1.04rem;
-  margin:1.4rem auto;
+  margin:0.4rem auto;
   font-size:0.34rem;
   text-align:center;
   line-height:1.05rem;
