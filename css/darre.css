@@ -129,3 +129,62 @@ body{
 .findkey img{
   width: 0.19rem;
 }
+
+/*流星效果*/
+.flystar{
+  width:4.25rem;
+  height: 2.39rem;
+  background: url("../images/flystar/star_end.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  z-index:66
+}
+/*流星效果*/
+.flystar img {
+  width:100%;
+}
+.flystaranimation{
+  -webkit-transform-origin:center center;
+  -webkit-animation:fly 2s 0.5s infinite ease-out normal none ;
+}
+.flystaranimation{
+  -moz-transform-origin:center center;
+  -moz-animation:fly 2s 0.5s infinite ease-out normal none ;
+}
+.flystaranimation2{
+  -webkit-transform-origin:center center;
+  -webkit-animation:fly 1.8s 0s infinite ease normal none ;
+}
+.flystaranimation2{
+  -moz-transform-origin:center center;
+  -moz-animation:fly 1.8s 0s infinite ease normal none ;
+}
+.flystaranimation3{
+  -webkit-transform-origin:center center;
+  -webkit-animation:fly 2.2s .3s infinite ease normal none ;
+}
+.flystaranimation3{
+   -moz-transform-origin:center center;
+   -moz-animation:fly 2.2s .3s infinite ease normal none ;
+ }
+@-webkit-keyframes fly{
+    0%{
+      -webkit-transform:translateX(px) translateY(px);
+    } 100%{
+        -webkit-transform:translateX(-500px) translateY(260px);
+      }
+  }
+.flystaranimation{
+     -moz-backface-visibility:visible;
+     -moz-transform-origin:center center;
+     -moz-animation:fly 1s 0s infinite ease normal none ;
+   }
+@-moz-keyframes fly{
+       0%{
+         -moz-transform:translateX(px) translateY(px);
+       } 100%{
+           -moz-transform:translateX(-500px) translateY(260px);
+         }
+     }
+
+
