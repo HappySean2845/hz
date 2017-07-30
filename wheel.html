@@ -14,15 +14,10 @@
 </head>
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <body>
-<div class="popup popup_big hide">
-    <img class="close" src="images/popup/close.png">
+<div class="popup popup_big hide" style="background:url(images/popup/popup_get_03.png) center top no-repeat;background-size: 100% 100%;z-index: 666">
+    <img class="close" id="close_award" src="images/popup/close.png">
     <img class="get_award_title" src="images/popup/200.png">
-    <div class="text">
-        <p>奖品已经发放到您的会员账户中啦！</p>
-        <!--<p><b>注册/登录会员</b>或扫描<b>枕巾、小桌板、桌背</b>的二维码，</p>-->
-        <!--<p>均有机会获得<b>“想住就住”</b>喔！</p>-->
-        <p>继续扫码收集“想住就住”，获取更多抽奖机会！</p>
-    </div>
+
     <div class="button">继续<br>寻宝</div>
     <div class="button">我要<br>抽奖</div>
 </div>
@@ -69,8 +64,8 @@
       $('.wheel_wrap').addClass('blur')
     }, 3500)
   })
-  $('.close').click(function () {
-    $('.popup').hide();
+  $('#close_award').click(function () {
+    $('.popup').fadeOut(500);
     $('.wheel_wrap').removeClass('blur');
   })
 </script>
