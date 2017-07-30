@@ -1,8 +1,6 @@
 /**
  * Created by Darre on 17/07/2017.
    */
-alert('jj335')
-
   //公用popup方法   popup用来制定popupcontainer中指定的某个popup   popkeypopu的id
 var popupShow = function (popkey,speed){
   if(typeof(speed) != "number") speed = 0;
