@@ -10,7 +10,7 @@
 }
 .popup{
   position:absolute;
-  top:20%;
+  top:12%;
   left:0.6rem;
 }
 .popup_small{
@@ -194,3 +194,6 @@
   text-align: center;
   margin-top: 0.72rem;
 }
+
+
+

@@ -196,7 +196,6 @@ body{
   color: #ffffff;
   font-size: 0.24rem;
   line-height:0.4rem;
-  margin-top: 1.02rem;
   /*width:5rem;*/
 }
 
@@ -244,4 +243,15 @@ body{
 }
 #popup_rule_new .game_rule_2 .highIcon{
   width:4.74rem;
+}
+.lightShake{
+  -webkit-animation:flash 1s .2s infinite ease both;
+  -moz-animation:flash 1s .2s infinite ease both;}
+@-webkit-keyframes flash{
+  0%,50%,100%{opacity: 1;}
+  25%,75%{opacity: 0;}
+}
+@-moz-keyframes flash{
+  0%,50%,100%{opacity: 1;}
+  25%,75%{opacity: 0;}
 }
