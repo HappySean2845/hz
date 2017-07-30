@@ -48,6 +48,7 @@ body{
   right:0rem;
   color:#fff;
   font-style: normal;
+  text-align: center;
 }
 .text_warp .text.light{
   background:url(../images/text_bg_light.png) center no-repeat !important;
@@ -71,20 +72,24 @@ body{
   width: 100%;
 }
 #gamerule{
-  width: 1.27rem;
+  width: 1.3rem;
   /*height: 0.88rem;*/
   position: absolute;
   right: 0.82rem;
   top: 1.4rem;
   z-index:555;
-  font-size: 0.17rem;
+  font-size: 0.2rem;
   line-height: 0.17rem;
   color: #ffffff;
   text-align: right;
+  /*text-decoration: underline;*/
+}
+#gamerule .msg span{
+  border-bottom:1px solid #ffffff;
+  padding-bottom: 0.03rem;
 }
 #gamerule .msg2{
   margin-top: 0.22rem;
-  text-decoration: underline;
 }
 #gamerule img{
   width: 100%;
@@ -231,7 +236,7 @@ body{
   padding-top: 0.06rem;
 }
 #popup_rule_new .scrollRule .little{
-  font-size: 0.18rem;
+  /*font-size: 0.18rem;*/
 }
 #popup_rule_new .scrollRule::-webkit-scrollbar {
   display: none;

@@ -13,9 +13,9 @@
 }
 .wheel_wrap .title{
   position: absolute;
-  width: 4.4rem;
-  left: 21.3%;
-  top: 1.5rem;
+  width: 4.45rem;
+  left: 20.4%;
+  top: 2.2rem;
 }
 .wheel_wrap .text_wrap{
   top:3.4rem !important;
@@ -69,9 +69,9 @@
   color: #ffffff;
   text-align: center;
   /*margin:0 auto;*/
-  font-size: 0.22rem;
+  font-size: 0.26rem;
   line-height: 0.22rem;
   position: absolute;
-  top: 9.84rem;
+  top: 9.86rem;
   width: 100%;
 }
