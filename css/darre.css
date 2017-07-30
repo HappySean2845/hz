@@ -29,14 +29,25 @@ body{
   left: 0.12rem;
   top: -0.24rem;
 }
-.text_wrap .text{
+.text_wrap .text.textlight{
+  background:url(../images/text_bg_light.png) center no-repeat;
+  background-size:0.64rem;
   position:relative;
   float:left;
   margin-left:0.15rem;
   width:0.64rem;text-align:center;
   height:0.64rem;line-height:0.6rem;
+  font-size:0.26rem;
+  color:#fff;
+}
+.text_wrap .text{
   background:url(../images/text_bg_dark.png) center no-repeat;
   background-size:0.64rem;
+  position:relative;
+  float:left;
+  margin-left:0.15rem;
+  width:0.64rem;text-align:center;
+  height:0.64rem;line-height:0.6rem;
   font-size:0.26rem;
   color:#fff;
 }

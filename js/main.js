@@ -33,8 +33,9 @@ function GetRequest() {
 //在每个页面通过url中参数，确定已经集齐的字
 function initKeyNum(jqObj){
   var urlObj = GetRequest();
-  jqObj.eq(0).find('i').html(urlObj.xiang=='1'?'1':'0');
-  jqObj.eq(1).find('i').html(urlObj.zhufir=='1'?'1':'0');
-  jqObj.eq(2).find('i').html(urlObj.jiu=='1'?'1':'0');
-  jqObj.eq(3).find('i').html(urlObj.zhusec=='1'?'1':'0');
+  jqObj.eq(0).addClass(urlObj.xiang=='1'?'':'textlight').find('i').html(urlObj.xiang=='1'?'1':'0');
+  jqObj.eq(1).addClass(urlObj.zhufir=='1'?'':'textlight').find('i').html(urlObj.zhufir=='1'?'1':'0');
+  jqObj.eq(2).addClass(urlObj.jiu=='1'?'':'textlight').find('i').html(urlObj.jiu=='1'?'1':'0');
+  jqObj.eq(3).addClass(urlObj.zhusec=='1'?'':'textlight').find('i').html(urlObj.zhusec=='1'?'1':'0');
+
 }
