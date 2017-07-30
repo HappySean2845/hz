@@ -44,7 +44,9 @@ body{
   background-color:#1D1731;
   display:block;
   border-radius:50%;
-  width:0.2rem;height:0.22rem;line-height:0.22rem;
+  width:0.2rem;
+  height:0.22rem;
+  line-height:0.2rem;
   border:1px solid #fff;
   font-size:0.16rem;
   position:absolute;

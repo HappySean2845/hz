@@ -27,8 +27,8 @@
     <img class="close" id="close_award" src="images/popup/close.png">
     <img class="get_award_title" src="images/popup/200.png">
 
-    <div class="button">继续<br>寻宝</div>
-    <div class="button">我要<br>抽奖</div>
+    <div style="margin-top:0.3rem" class="button">继续<br>寻宝</div>
+    <div style="margin-top:0.3rem" class="button">我要<br>抽奖</div>
 </div>
 <div class="wheel_wrap">
     <img src="images/logo.png" class="logo">
@@ -57,6 +57,8 @@
 <script type="text/javascript" src="js/rem.js"></script>
 <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script type="text/javascript">
+  var windowHeight = $(window).height();
+  $("body").css("height", windowHeight);
   $('.start').click(function () {
     $('.wheel').css({
       transition: 'none',
