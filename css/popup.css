@@ -19,6 +19,14 @@
   background:url(../images/popup/popup_small_bg.png) center top no-repeat;
   background-size:6.23rem 7.23rem;
 }
+
+#popup_rule_new{
+  width:6.2rem;height:9.23rem;
+  background:url(../images/popup/pop_rule.png) center top no-repeat;
+  background-size:6.2rem 9.23rem;
+}
+
+
 .popup_big{
   -webkit-transform:0.9;
   width:6.2rem;height:9.23rem;
@@ -193,7 +201,7 @@
   font-weight: bold;
   color: #ffffff;
   text-align: center;
-  margin-top: 0.72rem;
+  margin-top: 1.72rem;
 }
 
 

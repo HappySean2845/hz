@@ -214,16 +214,15 @@ body{
 }
 
 #popup_rule_new .scrollRule{
-  width:100%;
+  width: 100%;
   padding-left: 0.8rem;
-  /*pdding-left:1.88rem;*/
   color: #ffffff;
   font-size: 0.24rem;
-  line-height:0.4rem;
-  margin-top: 1.02rem;
+  line-height: 0.4rem;
+  margin-top: 0.76rem;
   height: 4.26rem;
   overflow: scroll;
-  width:5rem;
+  width: 5rem;
 }
 #popup_rule_new .scrollRule .title{
   font-weight:bold;
