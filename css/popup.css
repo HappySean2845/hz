@@ -20,7 +20,7 @@
   background-size:6.23rem 7.23rem;
 }
 
-#popup_rule_new{
+#popup_rule_new,#popup_begin{
   width:6.2rem;height:9.23rem;
   background:url(../images/popup/pop_rule.png) center top no-repeat;
   background-size:6.2rem 9.23rem;
@@ -186,12 +186,12 @@
   text-align:center;
   line-height:1.05rem;
 }
-#popup_begin,#popup_gamerule{
-  width: 6.14rem;
-  height: 7.12rem;
-  background: url(../images/howplay_bg.png) center top no-repeat;
-  background-size: 6.14rem 7.12rem;
-}
+/*#,#popup_gamerule{*/
+  /*width: 6.14rem;*/
+  /*height: 7.12rem;*/
+  /*background: url(../images/howplay_bg.png) center top no-repeat;*/
+  /*background-size: 6.14rem 7.12rem;*/
+/*}*/
 #popup_begin .want_font{
   /*margin-top: 5.46rem;*/
 }
