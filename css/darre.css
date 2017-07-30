@@ -15,6 +15,7 @@ body{
   width: 0.5rem;
   left: 0.12rem;
   top: -0.08rem;
+  z-index: -1;
 }
 .text_wrap .msg{
   font-size: 0.18rem;
