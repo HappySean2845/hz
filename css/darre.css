@@ -1,5 +1,9 @@
 @charset "utf-8";
 body{
+  /*transform: scale(1.1)!important;*/
+  /*-webkit-transform: scale(1.1)!important;*/
+}
+.scaleBig{
   transform: scale(1.1)!important;
   -webkit-transform: scale(1.1)!important;
 }
@@ -227,7 +231,7 @@ body{
   margin-top: 0.76rem;
   height: 4.26rem;
   overflow: scroll;
-  width: 5rem;
+  width: 5.2rem;
 }
 #popup_rule_new .scrollRule .title{
   font-weight:bold;

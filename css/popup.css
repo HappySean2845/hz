@@ -49,7 +49,7 @@
 }
 /*解锁*/
 .popup_unlock{
-  top:20%;
+  /*top:20%;*/
 }
 .popup_unlock .unlock_title{
   width:5.07rem;

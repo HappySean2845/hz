@@ -169,10 +169,10 @@
         <div class="button award">我要<br>抽奖</div>
     </div>
 </div>
-<div class="logo" id="logo">
+<div class="logo scaleBig" id="logo">
     <img src="images/darre/logo_03.png" alt=""/>
 </div>
-<div class="gamerule" id="gamerule">
+<div class="gamerule scaleBig" id="gamerule">
     <!--<img src="images/darre/howplay_06.png" alt=""/>-->
     <!--怎么玩-->
     <!--<div class="light_Icon light_shake">-->
@@ -198,7 +198,7 @@
     <img data-depth="0.26" class="light" src="images/light.png">
     <img data-depth="0.26" class="table" src="images/table.png">
     <img data-depth="0.23" class="chair" src="images/chair.png">
-    <img data-depth="0.23" class="tv" src="images/tv.png">
+    <img data-depth="0.23" class="tv"  src="images/tv.png">
     <!--亮点一-->
     <div data-depth="0.26" class="light_Icon light_shake" style="">
         <img src="images/darre/lightIcon_11.png" alt=""/>
@@ -214,7 +214,7 @@
     <!-- <img data-depth="0.20" class="bg_line" src="images/bg_line.png"> -->
 </div>
 <!-- 想住就住4个字 -->
-<div class="text_wrap">
+<div class="text_wrap scaleBig">
     <div class="msg">已收集：</div>
     <div class="text">想<i></i>
         <img class="biglight bigLightShake" src="images/biglight_03.png" alt="">
@@ -240,6 +240,8 @@
 <script type="text/javascript" src="libs/parallax.js"></script>
 <script type="text/javascript">
   $(function () {
+    var windowHeight = $(window).height();
+    $("body").css("height", windowHeight);
     initKeyNum($(".text_wrap .text"))
     //游戏说明弹窗
     popupShow("popup_begin", 0);
@@ -313,6 +315,11 @@
     $(".getJiu").on("click", function () {
       popupShow("popup_login", 500);
     })
+
+
+
+
+
   })
 </script>
 

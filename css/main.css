@@ -3,7 +3,7 @@ body{
   background-size:100% 100%;
   background-color:#01081d;
   width:7.5rem;
-  height:13.34rem;
+  /*height:13.34rem;*/
   overflow:hidden;
 }
 body #scene img{
