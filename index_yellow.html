@@ -242,6 +242,8 @@ top: 6.16rem;-->
 <script type="text/javascript" src="libs/parallax.js"></script>
 <script type="text/javascript">
   $(function () {
+    var windowHeight = $(window).height();
+    $("body,#scene").css("height", windowHeight);
     initKeyNum($(".text_wrap .text"))
     randomLight($(".light_Icon"));
     popupShow("popup_begin",0);
