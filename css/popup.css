@@ -40,7 +40,7 @@
   width: 0.34rem;
 }
 .popup .text{
-  font-size:0.21rem;
+  font-size:0.23rem;
   color:#fff;
   text-align:center;
 }
@@ -56,7 +56,7 @@
   height:1.73rem;
   position: absolute;
   left: 0.35rem;
-  top: 0.45rem;
+  top: 0.95rem;
 }
 .popup_unlock .text{
   margin-top: 2.2rem;
@@ -106,6 +106,11 @@
   font-size: 0.4rem;
   padding-bottom: 0.32rem;
 }
+.popup_big .get_award_title.small{
+  width: 3.5rem;
+  margin-left: 1.48rem;
+  padding-bottom: 0.28rem;
+}
 /*登录*/
 .popup_login{
   width:6.2rem;height:9.23rem;
@@ -118,7 +123,7 @@
   display:block;
 }
 .popup_login .login_msg{
-  font-size: 0.2rem;
+  font-size: 0.23rem;
   line-height: 0.2rem;
   color: #ffffff;
   text-align: center;

@@ -132,8 +132,8 @@ body{
   width: 100%;
 }
 .light_shake{
--webkit-animation:shake 1s .2s linear both infinite;
--moz-animation:shake 1s .2s linear both infinite;}
+-webkit-animation:shake 2s .2s linear both infinite;
+-moz-animation:shake 2s .2s linear both infinite;}
 @-webkit-keyframes shake{
 0%,50%,100%{opacity: 1;}
 25%,75%{opacity: 0;}
@@ -237,14 +237,14 @@ body{
 
 #popup_rule_new .scrollRule{
   width: 100%;
-  padding-left: 0.8rem;
+  padding-left: 1rem;
   color: #ffffff;
   font-size: 0.24rem;
   line-height: 0.4rem;
   margin-top: 0.76rem;
   height: 4.26rem;
   overflow: scroll;
-  width: 5.2rem;
+  width: 4.6rem;
 }
 #popup_rule_new .scrollRule .title{
   font-weight:bold;
@@ -272,10 +272,12 @@ body{
 }
 #popup_rule_new .game_rule_2 .highIcon{
   width:4.74rem;
+  display:block;
+  margin-left: -0.5rem;
 }
 .lightShake{
-  -webkit-animation:flash 1s .2s infinite ease both;
-  -moz-animation:flash 1s .2s infinite ease both;
+  -webkit-animation:flash 2s .2s infinite ease both;
+  -moz-animation:flash 2s .2s infinite ease both;
 }
 @-webkit-keyframes flash{
   0%,50%,100%{opacity: 1;}
