@@ -243,8 +243,9 @@ body{
   line-height: 0.4rem;
   margin-top: 0.76rem;
   height: 4.26rem;
-  overflow: scroll;
+  overflow-y: scroll;
   width: 4.5rem;
+  overflow-x: hidden;
 }
 #popup_rule_new .scrollRule .title{
   font-weight:bold;
