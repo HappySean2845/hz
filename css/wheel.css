@@ -40,8 +40,9 @@
   width:4rem;
   height:4rem;
   position:absolute;
-  left:24%;
+  left:50%;
   top:5.6rem;
+  margin-left: -2rem;
   background:url(../images/wheel/wheel.png) center no-repeat;
   background-size:4rem 4rem;
 }
@@ -50,7 +51,9 @@
   width:0.58rem;
   position: absolute;
   top: 6.45rem;
-  left: 3.48rem;
+  /*left: 3.48rem;*/
+  left:50%;
+  margin-left:-0.29rem;
 }
 .wheel_wrap .start{
   position:absolute;
@@ -64,6 +67,12 @@
   color:#fff;
   text-align:center;
   padding-top:0.9rem;
+}
+.wheel_wrap .start .startlight{
+  position: absolute;
+  left: 0.22rem;
+  top: 0.18rem;
+  width: 1.45rem;
 }
 .wheel_wrap .awardChance{
   color: #ffffff;
